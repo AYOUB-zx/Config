@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for config-y327hq on 2026-05-10T12:32:47Z
+# fly.toml app configuration file generated for config-8iywwg on 2026-05-10T12:42:32Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'config-y327hq'
-primary_region = 'iad'
+app = 'config-8iywwg'
+primary_region = 'fra'
 
 [build]
 
