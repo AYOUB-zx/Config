@@ -2,10 +2,11 @@ FROM teddysun/xray:latest
 
 # تثبيت الأدوات المساعدة
 RUN apk add --no-cache \
+    --repository https://dl-cdn.alpinelinux.org/alpine/edge/community \
     curl \
     bash \
     jq \
-    qrencode
+    libqrencode-tools
 
 # إنشاء المجلدات
 RUN mkdir -p /etc/xray /config
