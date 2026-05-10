@@ -19,7 +19,7 @@ XRAY_PID=$!
 # التحقق من التشغيل
 sleep 3
 
-if ps -p $XRAY_PID > /dev/null; then
+if kill -0 $XRAY_PID 2>/dev/null; then
     echo -e "${GREEN}✓ Xray يعمل بنجاح! (PID: $XRAY_PID)${NC}"
     echo -e "${YELLOW}المنافذ:${NC}"
     echo -e "  - VMess: 8080 (WebSocket /vpn)"
